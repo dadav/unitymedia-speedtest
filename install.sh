@@ -19,6 +19,7 @@ Environment=http_proxy=$http_proxy https_proxy=$https_proxy no_proxy=$no_proxy
 User=$USER
 WorkingDirectory=$(pwd)
 ExecStart=$VIRTUAL_ENV/bin/python3 check.py
+ExecStartPost=$VIRTUAL_ENV/bin/python3 plot.py
 
 [Install]
 WantedBy=multi-user.target
