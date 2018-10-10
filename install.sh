@@ -30,8 +30,8 @@ cat >umtest.timer <<EOF
 Description=Start Unitymedia Speedtest
 
 [Timer]
-OnBootSec=15min
-OnUnitActiveSec=6h
+OnBootSec=5min
+OnCalendar=0/2:00:00
 
 [Install]
 WantedBy=timers.target
