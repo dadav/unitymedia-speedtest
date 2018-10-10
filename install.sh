@@ -6,7 +6,7 @@ if [[ $VIRTUAL_ENV = "" ]]; then
 fi
 
 echo "Install python requirements"
-pip install -r requirements.txt 2>/dev/null
+pip3 install -r requirements.txt 2>/dev/null
 
 echo "Create Servicefile"
 cat >umtest.service <<EOF
@@ -18,7 +18,7 @@ Type=oneshot
 Environment=http_proxy=$http_proxy https_proxy=$https_proxy no_proxy=$no_proxy
 User=$USER
 WorkingDirectory=$(pwd)
-ExecStart=$VIRTUAL_ENV/bin/python check.py
+ExecStart=$VIRTUAL_ENV/bin/python3 check.py
 
 [Install]
 WantedBy=multi-user.target
