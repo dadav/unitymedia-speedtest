@@ -79,7 +79,7 @@ def main():
             "//div[@class='result-detail']/span[@class='entry']").text
 
         sname = "{}/speedtest_{}.png".format(args.output,
-                                             datetime.now().strftime("%Y%m%d"))
+                                             datetime.now().strftime("%Y%m%d%H%M"))
 
         log.info("Write result to file")
         os.makedirs(args.output, exist_ok=True)
