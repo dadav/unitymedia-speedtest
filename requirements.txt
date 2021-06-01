@@ -11,5 +11,5 @@ pyparsing==2.2.2
 python-dateutil==2.7.3
 selenium==3.14.1
 six==1.11.0
-urllib3==1.25.6
+urllib3==1.26.5
 wrapt==1.10.11
